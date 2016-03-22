@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>Chat ! :D</title>
+    </head>
+    <body>
+        <header><p>X</p></header>
+        <div class="container">
+            <section class="messages">
+                <section class="userData">
+                    <div class="usrData">
+                        <div>
+                            <h1 id="friendName"></h1>
+                            <p id="state"></p>
+                        </div>
+                        <img src="client.jpg" height="80" width="80">
+                    </div>
+                </section>
+                <section id="listsContainer">
+                    <ul id="list">
+                    </ul>
+<!--
+                    <ul class="newList" id="rrrr">
+                    </ul>
+-->
+                </section>
+                <div class="msgCenter">
+                    <div class="msgContainer">
+                        <textarea id="message" cols="5"></textarea> </br>
+                        <div class="sendAndSmiles">
+                            <img src="send.png" id="send" width="50" height="50"/>
+                            <img src="emoji/excited.svg" id="icon" width="46" height="46">
+                        </div>
+                    </div>
+                    <div class="emojis">
+                        <img src="emoji/bigSmile.svg" id="bigsmile" class="emo" width="26" height="26"/>
+                        <img src="emoji/cheese.svg" id="cheese" class="emo" width="26" height="26"/>
+                        <img src="emoji/confusedLaugh.svg" id="confusedlaugh" class="emo" width="26" height="26"/>
+                        <img src="emoji/crying.svg" id="crying" class="emo" width="26" height="26"/>
+                        <img src="emoji/excited.svg" id="excited" class="emo" width="26" height="26"/>
+                        <img src="emoji/foolish.svg" id="foolish" class="emo" width="26" height="26"/>
+                        <img src="emoji/furious.svg" id="furious" class="emo" width="26" height="26"/>
+                        <img src="emoji/good.svg" id="good" class="emo" width="26" height="26"/>
+                        <img src="emoji/ill.svg" id="ill" class="emo" width="26" height="26"/>
+                        <img src="emoji/lmao.svg" id="lmao" class="emo" width="26" height="26"/>
+                        <img src="emoji/lol.svg" id="lol" class="emo" width="26" height="26"/>
+                        <img src="emoji/love.svg" id="love" class="emo" width="26" height="26"/>
+                        <img src="emoji/satan.svg" id="satan" class="emo" width="26" height="26"/>
+                        <img src="emoji/shy.svg" id="shy" class="emo" width="26" height="26"/>
+                        <img src="emoji/smile.svg" id="smile" class="emo" width="26" height="26"/>
+                        <img src="emoji/thumbUp.svg" id="thumbup" class="emo" width="26" height="26"/>
+                        <img src="emoji/thinking.svg" id="thinking" class="emo" width="26" height="26"/>
+                        <img src="emoji/tired.svg" id="tired" class="emo" width="26" height="26"/>
+                        <img src="emoji/tongue.svg" id="tongue" class="emo" width="26" height="26"/>
+                        <img src="emoji/wink.svg" id="wink" class="emo" width="26" height="26"/>
+                        <img src="emoji/xD.svg" id="xD" class="emo" width="26" height="26"/>
+                        <img src="emoji/nerd.svg" id="nerd" class="emo" width="26" height="26"/>
+                        <img src="emoji/achoumi.svg" id="achoumi" class="emo" width="26" height="26"/>
+                        <img src="emoji/sleeping.svg" id="sleeping" class="emo" width="26" height="26"/>
+                        <img src="emoji/swag.svg" id="swag" class="emo" width="26" height="26"/>
+                        <img src="emoji/shywhistle.svg" id="shywhistle" class="emo" width="26" height="26"/>
+                        <img src="emoji/lying.svg" id="lying" class="emo" width="26" height="26"/>
+                        <img src="emoji/bebe.svg" id="bebe" class="emo" width="26" height="26"/>
+                        <img src="emoji/fille.svg" id="fille" class="emo" width="26" height="26"/>
+                        <img src="emoji/pizza.svg" id="pizza" class="emo" width="26" height="26"/>
+                        <img src="emoji/3adhma.svg" id="3adhma" class="emo" width="26" height="26"/>
+                        <img src="emoji/chocolat.svg" id="chocolat" class="emo" width="26" height="26"/>
+                        <img src="emoji/heart.svg" id="heart" class="emo" width="26" height="26"/>
+                        <img src="emoji/exclamation.svg" id="exclamation" class="emo" width="26" height="26"/>
+                        <img src="emoji/interrogation.svg" id="interrogation" class="emo" width="26" height="26"/>
+                        <img src="emoji/cat1.svg" id="smilingcat" class="emo" width="26" height="26"/>
+                        <img src="emoji/cat2.svg" id="lmaoingcat" class="emo" width="26" height="26"/>
+                        <img src="emoji/cat3.svg" id="lovingcat" class="emo" width="26" height="26"/>
+                        <img src="emoji/cat4.svg" id="excitedcat" class="emo" width="26" height="26"/>
+                    </div>
+                </div>
+            </section>
+            <section class="connectedClients">
+                <h2>Online</h2>
+                <ul id="clients">
+                </ul>
+            </section>
+        </div>
+         <div>
+            <label for="username">Username : </label>
+            <input type="text" id="username" name="username" placeholder="Username"/>
+            <input type="button" id="connect" value="Connect"/>
+            <input type="button" id="disconnect" value="Disonnect"/>
+        </div>
+    <script>
+    </script>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="client.js"></script>
+    </body>
+</html>

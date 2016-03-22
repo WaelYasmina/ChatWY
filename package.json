@@ -1,0 +1,12 @@
+{
+  "main": "http://chat-waelyasmina.rhcloud.com/", //"http://localhost:8080/" : à changer pour executer sur le localhost
+  "name": "Chat",
+"version": "0.1.0",
+  "window": {
+    "toolbar": false,
+    "frame": false,
+    "width": 596,
+    "height": 718,
+    "resizable": false
+  }
+}

@@ -1,0 +1,24 @@
+// envoi de messages privés
+sendPrivate.addEventListener('click', function () {
+    'use strict';
+    socket.emit('private', {usern : username.value, txt : document.getElementById('message').value, userTo : privateC.value});
+    document.getElementById('message').value = '';
+});
+
+// réception des messages privés
+socket.on('private', function (sock) {
+    'use strict';
+    var list = document.getElementById('list'),
+        li = document.createElement('li'),
+        user = document.createElement('p'),
+        msg = document.createElement('p'),
+        usern = username.value;
+    li.className = 'userAndMessage';
+    user.appendChild(document.createTextNode(sock.usern + '(Private)'));
+    msg.appendChild(document.createTextNode(' : ' + sock.txt));
+    li.appendChild(user);
+    li.appendChild(msg);
+    list.appendChild(li);
+    if (sock.usern === usern) { user.className = 'sendMessage'; } else { user.className = 'receiveMessage'; }
+    list.scrollTop = list.scrollHeight;
+});
