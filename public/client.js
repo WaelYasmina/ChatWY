@@ -1,6 +1,6 @@
 /*global io*/
 // connexion avec le serveur
-var socket = io.connect("http://localhost:8080/"), //socket = io.connect("http://localhost:8080/") : pour executer au localhost
+var socket = io.connect("http://chat-waelyasmina.rhcloud.com/"), //socket = io.connect("http://localhost:8080/") : pour executer au localhost
     send = document.getElementById('send'),
     disconnect = document.getElementById('disconnect'),
     msgBox = document.getElementById('message'),
